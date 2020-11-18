@@ -1,9 +1,9 @@
-// vue.config.js
 module.exports = {
-  runtimeCompiler: true,
-  devServer: {
-      watchOptions: {
-          poll: true
-      }
-  }
+    runtimeCompiler: true,
+    devServer: {
+        watchOptions: {
+            poll: true
+        }
+    },
+    transpileDependencies: ['vuetify']
 }
