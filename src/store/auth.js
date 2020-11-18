@@ -36,7 +36,7 @@ export default {
         },
         async sendRegisterRequest({ commit }, data) {
             commit('setErrors', {}, { root: true })
-            const response = await axios.post(process.env.VUE_APP_API_URL + 'store', data)
+            const response = await axios.post(process.env.VUE_APP_API_URL + 'user', data)
             commit('setUserData', response.data.user)
             localStorage.setItem('authToken', response.data.token)
         },
